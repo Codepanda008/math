@@ -1,0 +1,33 @@
+const newArray = [1, 3, 2, 5, 10,13,17,18,21,47]
+const isPrime = num => {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+};
+
+
+const myPrimeArray = newArray.filter(element => isPrime(element));
+console.log(myPrimeArray);
+
+
+Result:
+(6) [3, 2, 5, 13, 17, 47]
+
+
+2.sum of array
+
+var arr = [25,45,87,95]
+  
+// Creating variable to store the sum
+var sum = 0;
+
+// Running the for loop
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+}
+
+console.log(sum);
+
+result:
+252
